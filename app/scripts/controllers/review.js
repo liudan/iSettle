@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc function
- * @name iSettleApp.controller:MainCtrl
+ * @name iSettleApp.controller:ReviewCtrl
  * @description
- * # MainCtrl
+ * # ReviewCtrl
  * Controller of the iSettleApp
  */
 angular.module('iSettleApp')
-  .controller('MainCtrl', ['$scope', 'Page', function ($scope, Page) {
-    Page.routeTo('home');
+  .controller('ReviewCtrl', ['$scope', 'Page', function ($scope, Page) {
+    Page.routeTo('review');
 
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

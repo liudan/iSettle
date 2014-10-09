@@ -2,16 +2,18 @@
 
 /**
  * @ngdoc function
- * @name iSettleApp.controller:AboutCtrl
+ * @name iSettleApp.controller:SettleCtrl
  * @description
- * # AboutCtrl
+ * # SettleCtrl
  * Controller of the iSettleApp
  */
 angular.module('iSettleApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('SettleCtrl', ['$scope', 'Page', function ($scope, Page) {
+    Page.routeTo('settle');
+
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+  }]);
